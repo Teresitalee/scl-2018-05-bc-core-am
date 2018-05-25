@@ -1,0 +1,159 @@
+/* ESTILOS AL BODY
+-------------------------------------------------- */
+html,
+body {
+	height: 100%;
+}
+
+html {
+	background: #161415 url(../images/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+body {
+	font: 15px/30px "montserrat-regular", sans-serif;
+	font-weight: normal;
+	color: #ccd4db;
+}
+
+/* MAIN
+--------------------------------------------------------------------- */
+main.row {
+	max-width: 700px;
+}
+
+main {
+	text-align: center;
+}
+
+main::after {
+	content: "";
+	display: block;
+	height: 150px;
+}
+main h1 {
+	font: 38px/1.2em "montserrat-bold", sans-serif;
+	color: #fbca08;
+	margin-bottom: 12px;
+	padding: 0;
+}
+
+main p {
+	font: 17px/36px "montserrat-regular", sans-serif;
+	color: #fff;
+	margin-bottom: 18px;
+	padding: 0;
+}
+
+main hr {
+	border: solid #fbca08;
+	border-width: 5px 0 0;
+	margin: 19px auto 12px;
+	height: 0;
+	width: 100px;
+}
+
+main .site-header .logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 36px 0;
+	padding: 0;
+}
+
+main .site-header .logo a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	width: 116px;
+	height: 80px;
+	background: url("../images/logo/logo.png") no-repeat;
+	background-size: contain;
+}
+
+
+
+
+
+
+/* TIPOGRAFIA PERSONALIZADA
+--------------------------------------------------------------------- */
+  
+h1,
+{
+	font-family: "montserrat-bold", sans-serif;
+	color: #575859;
+    font-style: normal;
+    
+	text-rendering: optimizeLegibility;
+    margin: 28px 0 15px;
+    font-size: 30px;
+	line-height: 36px;
+	margin-top: 0;
+	letter-spacing: -1px;
+    
+
+
+}
+h1 a,
+
+ {
+	font-weight: inherit;
+}
+h1 {
+	font-size: 30px;
+	line-height: 36px;
+	margin-top: 0;
+	letter-spacing: -1px;
+}
+p {
+	margin: 15px 0 15px 0;
+}
+
+/* FOOTER 
+-----------------------------------------------------------------------------------*/
+footer {
+	clear: both;
+	font: 12px/24px "montserrat-regular", sans-serif;
+	background: #000;
+	padding: 18px 30px;
+	color: #303030;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 999992;
+}
+
+
+footer a:hover,
+footer a:focus {
+	color: #fff;
+}
+
+/* COPYRIGHT
+------------------------------------------------------------------- */
+.footer-copyright {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.footer-copyright li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	line-height: 24px;
+}
+
+.footer-copyright li::before {
+	content: "|";
+	padding-left: 6px;
+	padding-right: 10px;
+	color: #d4cccc;
+}
+
