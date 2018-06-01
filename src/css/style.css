@@ -27,9 +27,9 @@ body {
 }
 
 textarea {
-    width: 300px;
-    height: 100px;
-    text-transform: uppercase;
+    width: 480px;
+    height: 60px;
+    text-transform: lowercase;
     margin: 10px 0 10px 0;
 }
 
@@ -39,17 +39,18 @@ h3, h5 {
 }
 
 div {
-    padding: 20px;
+    padding: 8px;
 }
 
 input {
     padding: 4px;
-    margin: 10px 0 10px 0;
+	margin: 10px 0 10px 0;
+	
 }
 
 #chains {
-	height: 150px;
-	width: 50px;
+	height: 60px;
+	
 }
 
 /* TIPOGRAFIA PERSONALIZADA
@@ -70,18 +71,16 @@ input {
 	}
 	
 	h5 {
-		font-size: 20px;
-		line-height: 30px;
+		font-size: 30px;
+		line-height: 10px;
 		margin-top: 0;
-		letter-spacing: -1px;
-		font-family: "montserrat-bold", sans-serif;
-		color: #f3f5f7;
+		letter-spacing: -2px;
+		font-family: "courier", sans-serif;
+		color: #d4d6ce;
 		font-style: normal;
 		text-rendering: optimizeLegibility;
 		margin: 18px 0 15px;
 		text-align: center;
-
-
 	}
 	
 	input {
@@ -121,7 +120,7 @@ footer {
 	clear: both;
 	font: 12px/24px "montserrat-regular", sans-serif;
 	background: #000;
-	padding: 18px 30px;
+	padding: 8px 20px;
 	color: #8d8787;
 	width: 100%;
 	position: fixed;
@@ -145,7 +144,7 @@ footer a:focus {
 .footer-copyright {
 	margin: 0;
 	padding: 0;
-	float: left;
+	text-align: center;
 	
 }
 
@@ -153,7 +152,7 @@ footer a:focus {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	line-height: 24px;
+	line-height: 14px;
 }
 
 .footer-copyright li::before {

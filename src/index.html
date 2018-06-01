@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  
-  <!---MOBILE METAS 
+
+	<!---MOBILE METAS 
   =================================================================== -->
-  <meta charset="utf-8">
-  <meta name="author" content="TextMe">
-  <meta name="decription" content="Chat privado entre amigos">
-  <meta name="robots" content="index-follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="lenguage" content="español">
-  <link rel="shortcut icon" href="favicon.png" >
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
- 
-  <!---TITULO DE LA WEB 
+	<meta charset="utf-8">
+	<meta name="author" content="TextMe">
+	<meta name="decription" content="Chat privado entre amigos">
+	<meta name="robots" content="index-follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="lenguage" content="español">
+	<link rel="shortcut icon" href="favicon.png">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+
+	<!---TITULO DE LA WEB 
   =================================================================== -->
-  
-  <title> Caesar Cipher | Private message </title>
-  
-  <!---LINKS CSS ====================================================-->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="font-awesome/css/css/font-awesome.min.css" />
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 
-  <!-- CABECERA PRINCIPAL
+
+	<title> Caesar Cipher | Private message </title>
+
+	<!---LINKS CSS ====================================================-->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="font-awesome/css/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- CABECERA PRINCIPAL
    =================================================== -->
 </head>
-  <body>
-      
-  <header>
-    <div class="container">
-        <div class="row">
-      <div class="col-12">
-      <h3>Text me!</h3>
-      <h5>Descifra<span> & <span>Decifra tus mensajes secretos</h5>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3>Text me!</h3>
+					<hr>
+					<h5>Cifra<span> & <span>Decifra tus mensajes secretos</h5>
       <hr>
       </div>
     </div>
@@ -51,27 +54,30 @@
      <!-- DECIFRADO Y CIFRADO EL BLOQUE
    =================================================== -->
 
-   <div class="container">
-      <div class="row">
-      <div class="col-8">
-      <div style="float:left;">
-        <label>Texto:</label>
-        <br>
-        <textarea  class="text" id="decrypted" placeholder="Favor, tipea tu texto aquí para decifrarlo" cols="30" rows="10" style="width:30em; height:10em"></textarea>
+   <div class="wrapper">
+      <div class="col-12" style="float:left;">
+			<label>Plaintext:</label>
+			<br>
+			<textarea id="decrypted" placeholder="Please type plaintext to cipher here"></textarea>
+			<br>
+			<label>Ciphertext:</label>
+			<br>
+			<textarea id="encrypted" placeholder="Please type ciphertext to decipher here"></textarea><br>
+		
+        <label>Output:</label><br>
+        <textarea id="chains" readonly></textarea>
       </div>
     </div>
-  </div>
-</div> 
-      
+    <div>
         <div class="wrapper">
-        <div class="col-12">
+        <div class="col-16">
         <div style="float:left;">
         <label>Posición:</label>
         <br>
-        <input type="number" id="key" min="0" max="5" value="0">
+        <input type="number" id="key" min="0" max="12" value="0">
         <input type="submit" onclick="encrypt()" value="Cifrado">
         <input type="submit" onclick="decrypt()" value="Decifrado">
-        <input type="reset" onclick="clearBoxes()" value="Resets">
+        <input type="reset" onclick="clearBoxes()" value="Reset">
       </div>
     </div>
   
