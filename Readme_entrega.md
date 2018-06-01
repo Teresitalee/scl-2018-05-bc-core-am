@@ -1,5 +1,16 @@
 
 * PRIMERO :Revisión rápida y técnica del proyecto.
+
+   # Preambulo : Iniciar sesión en GitHub, forkear el repositorio enviado por el emisor. despues clonar el archivo
+                 e iniciar sesion en la terminal GIT Bash (en caso de usar windows) 
+                 bajo  los comandos:
+                 git init = iniciar repositorio (de preferencia ubicarte en la carpeta a clonar)
+                 git clone + url (del proyecto forkeado)= aca clonas el proyecto
+                 git commit -m" indicar que sera tu primer commit"
+                 git status = para saber el estado de tu respositorio
+                 git add . = Agregar los archivos del proyecto
+                 git push origin master = subir los cambios al repositorio
+
   1.1   abrir la carpeta scl-2018-BC-CORE-AM
         contenidos de los archivos : 
   1.2   index.html = abrir este archivo en un navegador
@@ -32,8 +43,9 @@
 2.2     Caja de texto principal    = Acá se debe introducir el texto () a cifrar
 2.3     Caja de key (posición)     = Aca se debe utilizar una grilla de numeros pre-selecionado
                                      para la conversion de caracteres a decifrar.
-2.4     Botón de Cifrado           = Se utlizara para ir a buscar la respuesta al cipher.        2.5     Caja de Resultado          = Aquí se muestra el resultado obtenido
-2.6     Botón de Decifrar          = Aquí se conversiona el resultado obtenido de Decifrado.
+2.4     Botón de Cifrado(decode)   = Se utlizara para ir a buscar la respuesta al cipher. 
+2.5     Caja de Resultado          = Aquí se muestra el resultado obtenido
+2.6     Botón de Decifrar (encode) = Aquí se conversiona el resultado obtenido de Decifrado.
 2.7     Caja de Texto              = Acá se muestra el mensaje a decifrar.
 2.8     Botón de researt           = Acá se puede limpiar todos los datos introducidos o 
                                      visualizados en las cajas de texto (se aplica a todo).
