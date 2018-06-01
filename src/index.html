@@ -56,15 +56,15 @@
 
    <div class="wrapper">
       <div class="col-12" style="float:left;">
-			<label>Plaintext:</label>
+			<label>Texto:</label>
 			<br>
-			<textarea id="decrypted" placeholder="Please type plaintext to cipher here"></textarea>
+			<textarea id="decode" placeholder="introduce tu texto aquí"></textarea>
 			<br>
-			<label>Ciphertext:</label>
+			<label>Texto Cifrado:</label>
 			<br>
-			<textarea id="encrypted" placeholder="Please type ciphertext to decipher here"></textarea><br>
+			<textarea id="encode" placeholder="Introduce el decifrado aquí"></textarea><br>
 		
-        <label>Output:</label><br>
+        <label>Salida:</label><br>
         <textarea id="chains" readonly></textarea>
       </div>
     </div>
@@ -75,8 +75,8 @@
         <label>Posición:</label>
         <br>
         <input type="number" id="key" min="0" max="12" value="0">
-        <input type="submit" onclick="encrypt()" value="Cifrado">
-        <input type="submit" onclick="decrypt()" value="Decifrado">
+        <input type="submit" onclick="encode()" value="Encode">
+        <input type="submit" onclick="decode()" value=Decode>
         <input type="reset" onclick="clearBoxes()" value="Reset">
       </div>
     </div>
