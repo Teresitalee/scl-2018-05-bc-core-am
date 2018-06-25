@@ -27,10 +27,10 @@ body {
 }
 
 textarea {
-    width: 480px;
-    height: 60px;
+    width: 380px;
+    height: 90px;
     text-transform: lowercase;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 20px 0;
 }
 
 h3, h5 {
@@ -42,52 +42,6 @@ div {
     padding: 8px;
 }
 
-input {
-    padding: 4px;
-	margin: 10px 0 10px 0;
-	
-}
-
-#chains {
-	height: 60px;
-	
-}
-
-/* TIPOGRAFIA PERSONALIZADA
---------------------------------------------------------------------- */
-
-	h3 {
-		font-size: 50px;
-		line-height: 36px;
-		margin-top: 0;
-		letter-spacing: -1px;
-		font-family: "montserrat-bold", sans-serif;
-		color: #f4f807;
-		font-style: normal;
-		text-rendering: optimizeLegibility;
-		margin: 18px 0 15px;
-		text-align: center;
-
-	}
-	
-	h5 {
-		font-size: 30px;
-		line-height: 10px;
-		margin-top: 0;
-		letter-spacing: -2px;
-		font-family: "courier", sans-serif;
-		color: #d4d6ce;
-		font-style: normal;
-		text-rendering: optimizeLegibility;
-		margin: 18px 0 15px;
-		text-align: center;
-	}
-	
-	input {
-		padding: 4px;
-		margin: 10px 0 10px 0;
-		
-	}
 
 	em {
 		font: 15px/30px "montserrat-regular", sans-serif;
@@ -102,6 +56,42 @@ input {
 		margin: 23px 0 12px;
 		height: 0;
 	}
+	textarea {
+		width: 290px;
+		height: 100px;
+		text-transform: uppercase;
+		margin: 20px 0 20px 0;
+	}
+	select {
+		width: 100px;
+	}
+	section {
+		margin: auto;
+		width: 90%;
+		padding: 20px;
+	}
+	h3, h5 {
+		text-align: center;
+	}
+	div {
+		padding: 20px;
+	}
+	input {
+		padding: 4px;
+		margin: 10px 0 10px 0;
+	}
+	#chains {
+		height: 120px;
+		width: 290px;
+		margin: 10px 0 10px 0;
+	}
+
+
+
+
+
+
+
 
 /* IMAGEN FLOTANTE 
 --------------------------------------------------------------------- */
@@ -127,11 +117,6 @@ footer {
 	bottom: 0;
 	left: 0;
 	z-index: 999992;
-}
-
-footer a,
-footer a:visited {
-	color: #e41b1b;
 }
 
 footer a:hover,

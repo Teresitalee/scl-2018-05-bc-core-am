@@ -21,29 +21,27 @@
 
 	<!---LINKS CSS ====================================================-->
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="font-awesome/css/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="font-awesome/css/css/font-awesome.min.css" />
+  
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<!-- CABECERA PRINCIPAL
    =================================================== -->
 </head>
-
 <body>
-
 	<header>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<h3>Text me!</h3>
-					<hr>
 					<h5>Cifra<span> & <span>Decifra tus mensajes secretos</h5>
       <hr>
-      </div>
     </div>
-
+  </div>
       <!-- LINKS REDES SOCIALES
    =================================================== -->
+   
       <nav class="social">
         <ul>
             <li><a href="#">Twitter <i class="fa fa-twitter"></i></a></li>
@@ -53,34 +51,36 @@
     </nav>
      <!-- DECIFRADO Y CIFRADO EL BLOQUE
    =================================================== -->
+   
+   <div style="float:left;">
+    <label>Key:</label>
+    <input type="number" id="key" min="0" max="5" value="0"><br>
+    <br>
+    <label>Texto Original:</label>
+    <br>
+    <textarea id="decrypted" placeholder="Aqui pon tu texto a cifrar"></textarea>
+    <br>
 
-   <div class="wrapper">
-      <div class="col-12" style="float:left;">
-			<label>Texto:</label>
-			<br>
-			<textarea id="decode" placeholder="introduce tu texto aquí"></textarea>
-			<br>
-			<label>Texto Cifrado:</label>
-			<br>
-			<textarea id="encode" placeholder="Introduce el decifrado aquí"></textarea><br>
-		
-        <label>Salida:</label><br>
-        <textarea id="chains" readonly></textarea>
-      </div>
-    </div>
+    <input type="submit" onclick="encrypt()" value="Cipher"><br>
+    <label>Resultado:</label><br>
+        <textarea id="chains" readonly></textarea>							
     <div>
-        <div class="wrapper">
-        <div class="col-16">
-        <div style="float:left;">
-        <label>Posición:</label>
-        <br>
-        <input type="number" id="key" min="0" max="12" value="0">
-        <input type="submit" onclick="encode()" value="Encode">
-        <input type="submit" onclick="decode()" value=Decode>
-        <input type="reset" onclick="clearBoxes()" value="Reset">
-      </div>
-    </div>
+        
+      </div>	
+  </div>
+
+  <div style="float:right">
   
+  <label>Texto Cifrado:</label>
+  <br>
+  <textarea id="encrypted" placeholder="Aqui pon tu texto a decifrar"></textarea>
+  <br>
+  <input type="submit" onclick="decrypt()" value="Decifrado"><br>
+  <input type="submit" onclick="getKey()" value="Ver Posicion"><br>
+    <input type="reset" onclick="clearBoxes()" value="Reset"><br>
+  </div>
+
+</section>
   </body>
  
   <!-- FOOTER
