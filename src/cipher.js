@@ -8,7 +8,7 @@ window.cipher = {
     document.getElementById("key").value = 0;
 }
 function encrypt() {
-    let decrypted = document.querySelector('#decrypted').value.toLocaleUpperCase();
+    let decrypted = document.querySelector('#decrypted').value.toLocaleUpperCase() || "ejemplo";
     let encrypted = document.querySelector('#encrypted');
     let key = document.querySelector('#key');
     let cipherArray = new Array();
